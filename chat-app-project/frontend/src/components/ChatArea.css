@@ -1,0 +1,106 @@
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #36393f;
+}
+
+.chat-area.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state {
+  text-align: center;
+  color: #72767d;
+}
+
+.empty-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.empty-state h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #b5bac1;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #202225;
+  background-color: #36393f;
+  flex-shrink: 0;
+}
+
+.channel-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.channel-info p {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: #72767d;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #b5bac1;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  background-color: #404249;
+  color: #fff;
+}
+
+.messages-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: 0;
+}
+
+.messages-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.no-messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #72767d;
+  font-size: 14px;
+}
+
+.no-messages p {
+  margin: 0;
+}

@@ -1,0 +1,55 @@
+.server-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.server-item {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #404249;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.server-item:hover {
+  border-radius: 40%;
+  background-color: #5865f2;
+}
+
+.server-item.active {
+  border-radius: 40%;
+  background-color: #5865f2;
+}
+
+.server-item.active::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  width: 4px;
+  height: 40px;
+  background-color: white;
+  border-radius: 0 2px 2px 0;
+}
+
+.server-item.home-icon {
+  margin-bottom: 8px;
+}
+
+.server-item.add-server {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.server-item.add-server:hover {
+  background-color: #43b581;
+  border-radius: 40%;
+}
