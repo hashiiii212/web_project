@@ -1,0 +1,140 @@
+.message-item {
+  display: flex;
+  gap: 12px;
+  padding: 4px 0;
+  transition: background-color 0.2s;
+  border-radius: 4px;
+  position: relative;
+  group: 'msg';
+
+  &:hover {
+    background-color: rgba(79, 84, 92, 0.4);
+  }
+}
+
+.message-item:hover .message-actions {
+  opacity: 1;
+}
+
+.message-avatar {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.message-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.message-author {
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #72767d;
+}
+
+.message-text {
+  color: #dcddde;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin-top: 2px;
+}
+
+.message-reactions {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.reaction-badge {
+  background-color: #404249;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reaction-badge:hover {
+  background-color: #5865f2;
+}
+
+.message-actions {
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: flex;
+  gap: 4px;
+}
+
+.reaction-button {
+  background-color: transparent;
+  border: none;
+  color: #b5bac1;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.reaction-button:hover {
+  background-color: #404249;
+  color: #fff;
+}
+
+.reactions-menu {
+  position: absolute;
+  right: -60px;
+  top: -40px;
+  background-color: #36393f;
+  border: 1px solid #202225;
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  gap: 4px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.reaction-option {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.reaction-option:hover {
+  background-color: #404249;
+}
+
+.message-item.own .message-content {
+  align-items: flex-end;
+}
